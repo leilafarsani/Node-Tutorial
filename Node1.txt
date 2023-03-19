@@ -8,3 +8,33 @@ Explain what express is and what it is used for
 Use express to create an API that will accept a GET request that returns JSON
 Implement routing to return different resources depending on URL
 Implement query params to return different content (?query=ses)
+
+1) API Refresh
+2) Intro to Node on Glitch
+2.1) Running a Simple Server
+
+TEACHER-LED LIVE CODING EXAMPLE
+As a class - try to make a simple express server.
+
+You can pick any theme you like but maybe try
+
+The class' favorite foods
+The class' favorite songs
+or get ideas from the class!
+The server should have one endpoint. When you request the 
+data from that endpoint it should give you the whole list
+of items that are stored in your node server.
+
+Now let's make a server ourselves from scratch...
+
+Make your own node server on glitch
+
+All trainees should "remix" this one for a simple start:
+https://glitch.com/~cyf-simple-express Have them it read 
+and modify it to do something different.
+
+Login to Glitch and ‘remix’ this project and rename to be yours
+e.g. say "Hello Miles", instead of "Hello Kash"
+Make it return an array of strings as json.
+Make it return the current time
+Advanced: make it return whatever you want! 3 minutes.
