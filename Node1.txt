@@ -63,6 +63,27 @@ people that you can download and use in your own projects.
 Run the following command in your terminal:
 npm install
 
+3.3) Building the server
+The first thing we need to do is build our server. You will
+always need to build a server when writing back-end code. 
+A server can be built in pure Node.js, but Express is simpler to work with.
+
+1. Create a server.js file
+Let's build our server! Before we do anything, let's create a new 
+file called server.js. This is where all our server code is going to live.
+
+2. require the express library
+We already installed Express in Step 2, but we need to make sure
+it is included in this file specifically so we can use its methods. 
+In Node.js, when you want to use a package in another file, you must require it.
+
+To require Express, write the following inside server.js:
+
+const express = require("express");
+
+Let us get used to ES6 syntax - so use const and let instead
+of var, arrow methods instead of functions, etc...
+
 
 
 
