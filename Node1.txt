@@ -213,3 +213,13 @@ see examples of them in Postman
  HTTP Response Codes
  HTTP Request Methods (or Verbs)
 
+
+3.4) Routing
+At the moment our server only does one thing. When it receives
+a request from the / endpoint, it sends back the same response: "Yay Node!".
+
+EXERCISE
+Try typing http://localhost:3000/node and see what happens.
+
+However by making use of endpoints, we can make the server send different 
+responses for different requests. This concept is called routing.
