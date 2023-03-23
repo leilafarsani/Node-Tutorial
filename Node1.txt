@@ -128,16 +128,88 @@ Type the following command in your terminal:
 
 6. npm script
 To exit the running the server, type crtl + c. Instead of running
-the server with node server.js everytime, we can create an alias 
+the server with node server.js every time, we can create an alias 
 for it in package.json.
-
 Under the scripts property, add start: node server.js. We can now run our
 server using npm start which will be an alias (a shortcut) to node server.js.
-
 Go to the terminal and type npm start and make sure that the server still runs.
 
 
+Communicating with the server
+Now that we've built the server, we need to communicate with it. 
+We are going to control the server with handler functions.
+What is a handler function?
+When a request reaches the server, we need a way of responding to it.
+In comes the handler function. The handler function is just a function
+which receives requests and handles them, hence the name.
 
+The handler function is always called with a request and response object.
+The response object is what gets sent back to the client.
+It contains the information that gets displayed in the web page.
+You can decide what to send back in your response.
 
+What does a handler function look like in Express?
+The get() method is one of the methods used to define a handler
+function in Express. It takes two parameters: the endpoint at 
+which to trigger an action (we'll explain more about this in the next step),
+and the handler function that tells it exactly what to do. 
+Here's a simple "Hello World!" example:
 
+// req is the Request object, res is the Response object
+// (these are just variable names, they can be anything but it's a convention to call them req and res)
+app.get("/", function (req, res) {
+  res.send("Hello World!");
+});
+
+Here, we are telling our server to respond with "Hello World!" 
+when someone tries to access the webpage.
+
+1. Create your own handler function
+Let us add a handler handler function to send back a message to 
+the client. To do that, we're going to use the Express send() method. 
+This will update the response object with the message.
+
+Update your handler function like so:
+
+const express = require("express");
+const app = express();
+
+app.get("/", function (req, res) {
+  res.send("Yay Node!");
+});
+
+app.listen(3000, function () {
+  console.log("Server is listening on port 3000. Ready to accept requests!");
+});
+
+::: Break Exercise Try to console.log the request object inside the handler function.
+
+Restart your server, send the request again with Postman,
+then go to your terminal to see what it looks like. 
+You should see a lot of data come through. :::
+
+2. Check it out in Postman
+Quit your server in the terminal with ctrl + c. 
+Then restart it to run your new changes.
+
+node server.js
+
+Now, open Postman, and send a GET request to http://localhost:3000.
+If you see your message in Postman, congratulations! You just sent 
+your first response from the server.
+
+CHECKPOINT
+Do you understand all these terms? You should be able to 
+see examples of them in Postman
+
+ Client
+ Server
+ Front-end
+ Back-end
+ Full stack developer
+ Request
+ Response
+ HTTP
+ HTTP Response Codes
+ HTTP Request Methods (or Verbs)
 
