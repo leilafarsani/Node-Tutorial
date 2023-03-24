@@ -18,3 +18,30 @@ Update them
 Delete them
 Below are three in-class exercises which can be used to
 demonstrate parts of the API workshop below.
+
+Workshop
+You can use this Express Cheatsheet to help you.
+
+API stands for Application Programming Interface.
+
+Read this description of what an API from How To Geek.
+
+Think of an API like a menu in a restaurant. The menu provides
+a list of dishes you can order, along with a description of each 
+dish. When you specify what menu items you want, the restaurant’s
+kitchen does the work and provides you with some finished dishes.
+You don’t know exactly how the restaurant prepares that food, and
+you don’t really need to. Similarly, an API lists a bunch of 
+operations that developers can use, along with a description of 
+what they do. The developer doesn’t necessarily need to know how,
+for example, an operating system builds and presents a “Save As”
+dialog box. They just need to know that it’s available for use in their app.
+
+An API does not have to be web-based. But in our work, since we are 
+doing web development, we will work only with web based APIs, so you
+might as well hear the word Web Service, and we will communicate with 
+those services using the protocol for Web: HTTP.
+
+CHECKPOINT
+Recap what we know about HTTP before continuing.
+
