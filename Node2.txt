@@ -7,3 +7,14 @@ Process a GET request using Express and Node to retrieve data from memory
 Process a POST request using Express and Node and store data in memory
 Process a DELETE request using Express and Node to remove data from memory
 Install a third party library using npm
+
+CRUD Continued
+So what will we build? we will build a CRUD API. CRUD stands for Create,
+Retrieve, Update, Delete. If you think about it, this is what most applications do:
+
+Create some "resources"
+Retrieve them (GET them)
+Update them
+Delete them
+Below are three in-class exercises which can be used to
+demonstrate parts of the API workshop below.
