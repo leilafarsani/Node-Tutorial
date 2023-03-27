@@ -110,6 +110,27 @@ Objective
 Change a quote API server to allow GETting a quote according to
  the given ID.
 
+ 3.3 Install Nodemon
+It is a bit annoying that we have to kill and restart our
+server every time we want to test our changes. There is a
+handy npm package that can help us with that task.
+
+npm install --save-dev nodemon
+
+Make sure the package is added to your package.json, add
+this line to the script:
+
+"scripts": {
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+},
+
+now from your terminal, use the command npm run dev and 
+that will run the server with nodemon which is a package 
+that makes the server listen to code changes and automatically restart
+
+
+
 The id should be given in the URL structure like this:
 
 /quotes/242342
