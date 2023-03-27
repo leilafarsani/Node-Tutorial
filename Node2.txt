@@ -98,3 +98,58 @@ JSON reply with the array we specified.
 
 Add another item to the array and test that the GET /albums 
 returns three items. (Remember you need to close the server ctrl+c and run it again node server.js)
+
+
+3.2 Get Album by ID
+3.2.1 Live Coding
+This is an Teacher led exercise which can be used to show how 
+we might retrieve an element by ID using a GET request.
+
+TEACHER LED LIVE CODING
+Objective
+Change a quote API server to allow GETting a quote according to
+ the given ID.
+
+The id should be given in the URL structure like this:
+
+/quotes/242342
+
+You should use the starting project: cyf-quotes-id-start.
+ This is because this project has quotes with IDs.
+
+When you remix the starting project, immediately rename it as your own.
+
+3.2.2 Workshop
+Sometimes, we do not want to list all the information 
+in one request, maybe we only want to get the information 
+related to a single album. Imagine if we have a page to display
+the details of one album, we could call the server and get all
+albums then filter the one we need client-side, but would it not
+be more effective to tell the server to just return the one album
+we are interested in?
+
+Let us add a new endpoint to return only a single 
+album GET /albums/:albumId. In this case, albumId
+ will tell us what album we can return so the call 
+ will be something like GET /albums/242342 and that
+will return the album with that has albumId 242342.
+
+This endpoint has something different.
+ The endpoint /albums/:albumId has a dynamic part,
+the albumId will vary depending on what the client send.
+If we call /albums/424252 then albumId is 424252, if we 
+call /albums/242342 then we will return the album with 
+albumId 242342 and so on.
+
+How can we achieve that using express - req.params will 
+have the value of
+
+app.get("/albums/:albumId", function (req, res) {
+  // req.params.albumId will match the value in the url after /albums/
+  console.log(req.params.albumId);
+  // now we can use the value for req.params.albumId to find the album requested
+  // how do we "find" something in an array
+
+  // finish the code yourself - it should end with res.send(album)
+   where album is the single album you found  based on the id
+});
