@@ -150,6 +150,38 @@ In this example, we create an HTTP server that listens on port 3000.
 The listen() method is called on the server object with the port number and a callback 
 function that logs a message to the console when the server starts listening.
 
+
+-response.sendFile()
+In Node.js, the response.sendFile() method is used to send a file to the client 
+in response to an HTTP request. This method is part of the response object, 
+which is passed to the callback function of an HTTP request handler.
+
+The syntax for response.sendFile() method is as follows:
+response.sendFile(path [, options] [, fn])
+
+Here, path is the path to the file that needs to be sent to the client.
+options is an optional object that can be used to specify various options 
+such as the root directory of the file, the headers to be sent along with
+the file, etc. fn is an optional callback function that is called after the file is sent.
+
+Here is an example usage of the response.sendFile() method:
+
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
+
+In this example, we create an Express.js web application that serves an HTML file 
+when a GET request is made to the root endpoint. The response.sendFile() method is 
+called with the path to the index.html file using the __dirname global variable to
+resolve the absolute path of the file.
+
+Note that the sendFile() method is usually used to send static files such as HTML,
+CSS, JavaScript, images, etc. For dynamically generated content, we can use methods 
+such as response.send() or response.json().
+
 TEACHER-LED LIVE CODING EXAMPLE
 As a class - try to make a simple express server.
 You can pick any theme you like but maybe try
