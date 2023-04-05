@@ -30,8 +30,33 @@ app.listen() on Line 15
 response.sendFile() on Line 6 and Line 7
 Can we work out what each those lines are doing?
 
+In Node.js, the "require" function is used to load modules or files
+into a Node.js application. It is a built-in function that allows you 
+to include external code or functionality in your Node.js application.
 
+When you use the "require" function, you specify the name of the module
+or file that you want to include. The name can be a path to a file, a Node.js 
+core module, or the name of a module installed via the npm package manager.
 
+Here's an example of using the "require" function to load a Node.js core module:
+const fs = require('fs');
+
+This code loads the "fs" module, which provides file system-related functionality,
+and assigns it to the "fs" variable.
+
+You can also use the "require" function to load a module or file that you've 
+created in your application. For example, if you have a file called "myModule.js" 
+in the same directory as your application, you could load it using the following code:
+
+const myModule = require('./myModule');
+
+In this case, "./myModule" is a relative path to the file. When the "require" function 
+is called, Node.js will look for the file and load its contents into the application.
+
+Note that the "require" function is synchronous, which means that it will block the execution 
+of your code until the module or file has been loaded. If you need to load modules asynchronously,
+you can use the "import" statement (which is supported in newer versions of Node.js) or use a
+package like "async" or "bluebird".
 
 
 TEACHER-LED LIVE CODING EXAMPLE
