@@ -10,12 +10,32 @@ Implement routing to return different resources depending on URL
 Implement query params to return different content (?query=ses)
 
 1) API Refresh
-2) Intro to Node on Glitch
-2.1) Running a Simple Server
+2) Intro to Node on Glitch​
+
+2.1) Running a Simple Server​
+
+Run the simplest web server code.
+We've made a really simple server about cats. You can check it out here:
+
+Source  https://glitch.com/~cyfcats
+Live    https://cyfcats.glitch.me
+
+TEACHER-LED LIVE CODING EXAMPLE
+Let's inspect the different parts of the Node App and how Express works. Let's discuss
+
+require on Line 1
+express() on Line 2
+app.get() on Line 10
+app.listen() on Line 15
+response.sendFile() on Line 6 and Line 7
+Can we work out what each those lines are doing?
+
+
+
+
 
 TEACHER-LED LIVE CODING EXAMPLE
 As a class - try to make a simple express server.
-
 You can pick any theme you like but maybe try
 
 The class' favorite foods
