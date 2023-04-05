@@ -119,6 +119,37 @@ that is called when the server's response is received.
 The "get" method can also be used with other Node.js modules, such as the "request" module or
 the "axios" module, which provide additional features and functionality for sending HTTP requests.
 
+-listen()
+In Node.js, the listen() method is used to start a server that listens for incoming connections 
+on a specified network address (IP) and port. The listen() method is a method of the http or
+https module, which are core modules in Node.js used for building web servers.
+The syntax for listen() method is as follows:
+
+server.listen(port[, hostname][, backlog][, callback])
+
+Here, port is the port number on which the server listens for incoming requests. hostname is
+an optional parameter that specifies the network address on which the server is listening.
+By default, the server listens on all available network interfaces. backlog is an optional 
+parameter that specifies the maximum number of queued incoming connections. callback is an 
+optional function that is called when the server starts listening.
+Here is an example usage of the listen() method:
+
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World\n');
+});
+
+server.listen(3000, () => {
+  console.log('Server running on http://localhost:3000/');
+});
+
+In this example, we create an HTTP server that listens on port 3000.
+The listen() method is called on the server object with the port number and a callback 
+function that logs a message to the console when the server starts listening.
+
 TEACHER-LED LIVE CODING EXAMPLE
 As a class - try to make a simple express server.
 You can pick any theme you like but maybe try
