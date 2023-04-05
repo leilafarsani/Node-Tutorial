@@ -30,6 +30,7 @@ app.listen() on Line 15
 response.sendFile() on Line 6 and Line 7
 Can we work out what each those lines are doing?
 
+-require()
 In Node.js, the "require" function is used to load modules or files
 into a Node.js application. It is a built-in function that allows you 
 to include external code or functionality in your Node.js application.
@@ -57,6 +58,51 @@ Note that the "require" function is synchronous, which means that it will block 
 of your code until the module or file has been loaded. If you need to load modules asynchronously,
 you can use the "import" statement (which is supported in newer versions of Node.js) or use a
 package like "async" or "bluebird".
+
+-express()
+Express is a popular web application framework for Node.js that simplifies the process of
+building web applications by providing a set of features and tools for handling HTTP requests
+and responses, managing routes, and interacting with databases.
+
+Express is built on top of Node.js's built-in HTTP module and provides a higher level of 
+abstraction, making it easier to write web applications. It allows developers to define
+routes and middleware functions that handle incoming requests and produce responses.
+
+To use Express in your Node.js application, you first need to install it as a dependency
+using npm. You can do this by running the following command in your terminal:
+
+npm install express
+
+Once you have installed Express, you can start building your web application by creating 
+an instance of the Express application and defining routes and middleware functions.
+
+Here's an example of a simple Express application that responds to HTTP GET requests 
+at the root URL ("/") with a "Hello World!" message:
+
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(3000, () => {
+  console.log('Server listening on port 3000');
+});
+
+In this code, we first require the "express" module and create an instance of the Express
+application using the "express()" function. We then define a route using the "app.get()" method,
+which handles HTTP GET requests at the root URL ("/") and sends a "Hello World!" message as the
+response using the "res.send()" method.
+
+Finally, we start the server by calling the "app.listen()" method and specifying the port number 
+that we want the server to listen on.
+
+Express provides many additional features, such as middleware functions for handling authentication,
+serving static files, and parsing request bodies. It also supports templates engines like EJS and Pug 
+for rendering dynamic HTML pages.
+
+
 
 
 TEACHER-LED LIVE CODING EXAMPLE
