@@ -103,7 +103,21 @@ serving static files, and parsing request bodies. It also supports templates eng
 for rendering dynamic HTML pages.
 
 
+- get()
+The "get" method in Node.js is a function that is used to retrieve data from a specified URL. 
+It is typically used to send HTTP requests to a server and receive the server's response in the form of data.
 
+In the context of Node.js, the "get" method is often used in conjunction with the built-in HTTP module to
+retrieve data from a server. It can be called using the following syntax:
+
+http.get(url[, options], callback)
+
+Here, "url" specifies the URL that the request should be sent to, "options" is an optional object 
+that can be used to configure the request (such as setting headers), and "callback" is a function
+that is called when the server's response is received.
+
+The "get" method can also be used with other Node.js modules, such as the "request" module or
+the "axios" module, which provide additional features and functionality for sending HTTP requests.
 
 TEACHER-LED LIVE CODING EXAMPLE
 As a class - try to make a simple express server.
