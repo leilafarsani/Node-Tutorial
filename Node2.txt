@@ -20,7 +20,7 @@ Below are three in-class exercises which can be used to
 demonstrate parts of the API workshop below.
 
 Workshop
-You can use this Express Cheatsheet to help you.
+You can use this Express Cheat-sheet to help you.
 
 API stands for Application Programming Interface.
 

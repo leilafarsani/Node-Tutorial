@@ -4,3 +4,20 @@ By the end of this lesson trainees should be able to:
 
 Process a PUT request using Express and Node to update data in memory
 Upload their node app to the internet so it can be accessed anywhere using Heroku
+
+2.1) Using Update​
+
+This is a teacher led exercise which can be used to remind students 
+how to update resources by making a PUT request.
+
+TEACHER-LED LIVE CODING
+Objective​
+
+Change a quote API server to allow updating a quote according to the given ID.
+
+The route should use the HTTP method PUT and should use the URL:
+
+/quotes
+You should use the starting project: cyf-quotes-id-start. This is because this project has quotes with IDs.
+
+When you remix the starting project, immediately rename it as your own.

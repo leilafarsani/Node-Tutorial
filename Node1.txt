@@ -182,6 +182,8 @@ Note that the sendFile() method is usually used to send static files such as HTM
 CSS, JavaScript, images, etc. For dynamically generated content, we can use methods 
 such as response.send() or response.json().
 
+
+
 TEACHER-LED LIVE CODING EXAMPLE
 As a class - try to make a simple express server.
 You can pick any theme you like but maybe try
@@ -189,9 +191,8 @@ You can pick any theme you like but maybe try
 The class' favorite foods
 The class' favorite songs
 or get ideas from the class!
-The server should have one endpoint. When you request the 
-data from that endpoint it should give you the whole list
-of items that are stored in your node server.
+The server should have one endpoint. When you request the data from that endpoint 
+it should give you the whole list of items that are stored in your node server.
 
 Now let's make a server ourselves from scratch...
 
