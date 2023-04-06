@@ -18,6 +18,43 @@ Change a quote API server to allow updating a quote according to the given ID.
 The route should use the HTTP method PUT and should use the URL:
 
 /quotes
-You should use the starting project: cyf-quotes-id-start. This is because this project has quotes with IDs.
+You should use the starting project: cyf-quotes-id-start. 
+This is because this project has quotes with IDs.
 
 When you remix the starting project, immediately rename it as your own.
+
+2.2 Workshop: Updating Data​
+
+Let's look back at our original objectives using the albums
+project from previous lessons. Try to apply what you learned 
+about PUT routes to this project.
+
+GLITCH ALBUMS PROJECT
+If you don't have your albums project in available, you can practice
+creating a PUT route using the cyf-albums-start project.
+
+PUT /albums/:albumId should update the album (that matches the passed albumId)
+This means that PUT /albums/2 should update an album with the id 2 and return 200 with JSON { success: true } to the user.
+
+The code should look something like this:
+
+// notice .put
+app.put("/albums/:albumID", function (req, res) {
+  console.log("PUT /albums route");
+});
+
+Remember, you have got to update the album, not add it to the list.
+
+Test that your API works by updating one of the albums.
+
+EXTRA CHALLENGES
+To challenge yourself even further, try to complete these challenges:
+
+CHALLENGE 1: return the old version of the object you updated as 
+well as the new value in the response
+
+CHALLENGE 2: validate the request body to make sure the ID 
+can't be updated and that users can't add additional fields
+
+CHALLENGE 3: persist your changes to file so that you are able 
+to return your updated values even after you make code changes in Glitch
