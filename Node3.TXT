@@ -71,9 +71,11 @@ using Snap, run the following command in WSL instead. You can ask a TA for help:
 curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 EXERCISE
-Work in pairs and with Teaching Assistants to get your homework from the previous two weeks working online by following this Heroku walkthrough.
+Work in pairs and with Teaching Assistants to get your homework from the previous
+two weeks working online by following this Heroku walkthrough.
 
-If you don't have your albums project available, you can follow Heroku's guide and deploy one of their provide apps.
+If you don't have your albums project available, you can follow Heroku's guide 
+and deploy one of their provide apps.
 
 You should complete all of the following sections:
 
@@ -102,3 +104,27 @@ heroku    # the Heroku client you installed through the guide/video
 ps:scale  # telling Heroku that you want to perform a scale operation on a process
 web=1     # in your procfile, you defined a process called web - you're just 
 telling Heroku to scale this process to 1 here
+
+4) City Guide and Paired Programming​
+
+EXERCISE
+For this exercises you should split into groups of two or three people. 
+Focus on just completing level 100 if you can! This exercise is designed
+to test your pair programming skills and to get you thinking about how to 
+design a full stack application! :) You're not expected to get everything completed.
+
+You're encouraged to collaborate on either React or Node at any one time 
+(i.e. both of you working on React or Node at one time - recommendation is 
+to start on the side that at least one of you are not comfortable with!) - one of 
+you should "drive" (i.e. code) while the other "navigates" (i.e. provide suggestions).
+ Make sure to switch roles every so often to share the experience!
+
+You can find the challenge here.
+
+Remember to use create-react-app!
+
+It is very important that you do not move onto the next level of the challenge
+ until both of you have completed the level.
+
+e.g. Both of you have to finish Level 100 before continuing onto Level 200.
+If one of you gets stuck - help each other!
